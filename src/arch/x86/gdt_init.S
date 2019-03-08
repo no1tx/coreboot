@@ -21,15 +21,11 @@ gdt_init:
 .previous
 	.align	4
 .globl gdtptr
+gdt:
 gdtptr:
 	.word	gdt_end - gdt -1 /* compute the table limit */
 	.long	gdt		 /* we know the offset */
-
-	.align	4
-gdt:
-	/* selgdt 0, unused */
-	.word	0x0000, 0x0000		/* dummy */
-	.byte	0x00, 0x00, 0x00, 0x00
+	.word	0
 
 	/* selgdt 0x08, flat code segment */
 	.word	0xffff, 0x0000

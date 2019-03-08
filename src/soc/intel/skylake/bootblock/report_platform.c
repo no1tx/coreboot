@@ -52,7 +52,6 @@ static struct {
 	{ PCI_DEVICE_ID_INTEL_SKL_ID_ULX, "Skylake-ULX" },
 	{ PCI_DEVICE_ID_INTEL_SKL_ID_H, "Skylake-H" },
 	{ PCI_DEVICE_ID_INTEL_SKL_ID_H_EM, "Skylake-H Embedded" },
-	{ PCI_DEVICE_ID_INTEL_SKL_ID_DT, "Skylake-DT" },
 	{ PCI_DEVICE_ID_INTEL_KBL_ID_U, "Kabylake-U" },
 	{ PCI_DEVICE_ID_INTEL_KBL_U_R, "Kabylake-R ULT"},
 	{ PCI_DEVICE_ID_INTEL_KBL_ID_Y, "Kabylake-Y" },
@@ -70,7 +69,6 @@ static struct {
 	{ PCI_DEVICE_ID_INTEL_SPT_LP_U_PREMIUM, "Skylake-U Premium" },
 	{ PCI_DEVICE_ID_INTEL_SPT_LP_Y_PREMIUM, "Skylake-Y Premium" },
 	{ PCI_DEVICE_ID_INTEL_SPT_H_PREMIUM, "Skylake PCH-H Premium" },
-	{ PCI_DEVICE_ID_INTEL_SPT_H_H110, "Skylake PCH-H H110" },
 	{ PCI_DEVICE_ID_INTEL_SPT_H_C236, "Skylake PCH-H C236" },
 	{ PCI_DEVICE_ID_INTEL_SPT_H_QM170, "Skylake PCH-H QM170" },
 	{ PCI_DEVICE_ID_INTEL_SPT_H_HM175, "Skylake PCH-H HM175" },
@@ -97,7 +95,6 @@ static struct {
 	const char *name;
 } igd_table[] = {
 	{ PCI_DEVICE_ID_INTEL_SKL_GT1_SULTM, "Skylake ULT GT1"},
-	{ PCI_DEVICE_ID_INTEL_SKL_GT2_DT2P1, "Skylake DT GT2" },
 	{ PCI_DEVICE_ID_INTEL_SKL_GT2_SULXM, "Skylake ULX GT2" },
 	{ PCI_DEVICE_ID_INTEL_SKL_GT2_SULTM, "Skylake ULT GT2" },
 	{ PCI_DEVICE_ID_INTEL_SKL_GT2_SHALM, "Skylake HALO GT2" },

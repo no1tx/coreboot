@@ -21,6 +21,7 @@
 #include <arch/io.h>
 #include <device/mmio.h>
 #include <device/pci_ops.h>
+#include <arch/acpi.h>
 #include <console/console.h>
 #include <reset.h>
 #include "hudson.h"

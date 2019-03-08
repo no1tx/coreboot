@@ -34,7 +34,7 @@
 #define PTN_INVALID_EDID	0x20000000
 
 struct ptn_3460_config {
-	/* DisplayPort interface control. */
+	/* DiplayPort interface control. */
 	uint8_t dp_interface_ctrl;
 	/* LVDS interface control register 1. */
 	uint8_t lvds_interface_ctrl1;

@@ -24,6 +24,7 @@
 #include <halt.h>
 #include <lib.h>
 #include <timestamp.h>
+#include <arch/acpi.h>
 #include <device/pci_def.h>
 #include <cpu/x86/lapic.h>
 #include <cbmem.h>

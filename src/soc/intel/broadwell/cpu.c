@@ -18,6 +18,7 @@
 #include <device/device.h>
 #include <device/pci.h>
 #include <string.h>
+#include <arch/acpi.h>
 #include <arch/cpu.h>
 #include <cpu/cpu.h>
 #include <cpu/x86/mtrr.h>

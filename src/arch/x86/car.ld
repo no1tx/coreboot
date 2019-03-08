@@ -31,10 +31,6 @@
 #if IS_ENABLED(CONFIG_VBOOT_STARTS_IN_BOOTBLOCK)
 	VBOOT2_WORK(., 16K)
 #endif
-	/* Vboot measured boot TCPA log measurements.
-	 * Needs to be transferred until CBMEM is available
-	 */
-	VBOOT2_TPM_LOG(., 2K)
 	/* Stack for CAR stages. Since it persists across all stages that
 	 * use CAR it can be reused. The chipset/SoC is expected to provide
 	 * the stack size. */
@@ -88,14 +84,6 @@
 	. = ALIGN(ARCH_POINTER_ALIGN_SIZE);
 	_car_global_end = .;
 	_car_relocatable_data_end = .;
-
-#if IS_ENABLED(CONFIG_NORTHBRIDGE_INTEL_SANDYBRIDGE) && \
-    !IS_ENABLED(CONFIG_USE_NATIVE_RAMINIT)
-	. = ABSOLUTE(0xff7e1000);
-	_mrc_pool = .;
-	. += 0x5000;
-	_emrc_pool = .;
-#endif
 
 #if !IS_ENABLED(CONFIG_C_ENVIRONMENT_BOOTBLOCK)
 	_car_stack_start = .;
